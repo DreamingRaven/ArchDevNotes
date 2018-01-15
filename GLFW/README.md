@@ -3,4 +3,4 @@ Personal reference guide to installing certain development tools on arch linux
 
 installed: glfw-wayland.
 
-Issue: There is a problem with glfwInit() failing causing any generated window pointers to be null.
+No issues, assuming correct implementation. See ArchDevNotes/Vulkan or https://github.com/DreamingRaven/VulkanExperiments for examples

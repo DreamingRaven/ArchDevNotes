@@ -1,7 +1,15 @@
+// GeorgeRaven:18/01/13 (yy/mm/dd)
 #include <iostream>
-#include <vulkan/vulkan.h>
+#include "VulkanEngine.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+    try{
+        VulkanEngine app;
+        app.run();
+    }
+    catch(const std::runtime_error& e) {
+        std::cerr << e.what() << std::endl;
+        return EXIT_FAILURE;
+    }
+    return EXIT_SUCCESS; // 0
 }
